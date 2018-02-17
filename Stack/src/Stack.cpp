@@ -34,14 +34,14 @@ int main() {
 	tStack.push(Test("Omid"));
 	tStack.push(Test("Amir"));
 
-/***************************CAREFULL************************
+/***************************\CAREFULL/************************
 // This is wrong because the object which t1 references to that, is destroyed by pop().
 // and t1.print() is working with a destroyed referenece memory
 
 	Test& t1 = tStack.top();
 	tStack.pop();
 	t1.print();
-/*********************************************************/
+*********************************************************/
 
 	while(tStack.size() > 0 ){
 		Test &test = tStack.top();
